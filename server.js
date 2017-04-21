@@ -1,4 +1,4 @@
-e strict';
+use strict';
 
 const express = require('express');
 
