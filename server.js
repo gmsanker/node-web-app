@@ -11,7 +11,8 @@ app.get('/', function (req, res) {
   res.send('Hello world\n');
 });
 //App 2
-$.getJSON('//ipinfo.io/json', function(data) {
+const app2 = express();
+app.getJSON('//ipinfo.io/json', function(data) {
   console.log(JSON.stringify(data, null, 2));
 });
 
