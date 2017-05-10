@@ -10,12 +10,6 @@ const app = express();
 app.get('/', function (req, res) {
   res.send('Hello world\n');
 });
-//App 2
-const app2 = express();
-app.getJSON('//ipinfo.io/json', function(data) {
-  console.log(JSON.stringify(data, null, 2));
-});
-
 
 app.listen(PORT);
 console.log('Running on http://localhost:' + PORT);
